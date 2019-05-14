@@ -1,13 +1,14 @@
 # DOM: Document Object Model
 
 ### 1. Why DOM?
->The W3C Document Object Model (DOM) is a platform and language-neutral interface that allows programs and scripts to dynamically access and update the content, structure, and style of a document.
+>It is an interface that allows programs and scripts to dynamically access and update the content, structure, and style of a document.
 
-### 2. What You Will Learn?
-+ How to change the content of HTML elements
-+ How to change the style (CSS) of HTML elements
-+ How to react to HTML DOM events
-+ How to add and delete HTML elements
+### 2. Objective
++ How to
+    + change the content of HTML elements
+    + change the style (CSS) of HTML elements
+    + react to HTML DOM events
+    + add and delete HTML elements
 
 ### 3. JavaScript - HTML DOM Methods
 + What is **property** and what is **method**
@@ -47,14 +48,32 @@
 
 ### 6. How to add event handling?
 
-+ Explain what is event handling?
-+ Explain how to add event handling to HTML element
++ Why event handling?
 
 + Illustrate with examples
+
 ```javascript
 document.getElementById(id).onclick = function(){code}
 ```
 
+OR
+
+```javascript
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 onclick="changeText(this)">Click on this text!</h1>
+
+<script>
+function changeText(id) { 
+  id.innerHTML = "Ooops!";
+}
+</script>
+
+</body>
+</html>
+```
 
 ### 7. Finding different HTML Objects
 
